@@ -1,0 +1,1 @@
+sample :drum_cymbal_open, attack: 0.01, sustain: 0, release: 0.1

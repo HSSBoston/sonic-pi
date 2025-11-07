@@ -1,0 +1,11 @@
+in_thread do
+  loop do
+    sample :drum_heavy_kick
+    sleep 1
+  end
+end
+loop do
+  use_synth :fm
+  play 40, release: 0.2
+  sleep 0.5
+end
