@@ -4,7 +4,7 @@ chords =[nil, chord(:f3, :major), chord(:c3, :major),  chord(:d3, :minor),  chor
 live_loop :chords do
   with_fx :echo, mix: 0.1 do 
     c = chords.tick
-    play_chord c, release: 4 if(!c==nil)
+    play_chord c, release: 4 if !c.nil?
     sleep 4
   end
 end
