@@ -3,21 +3,21 @@ use_synth :piano
 
 define :chords do
   sleep 4
-  play_chord chord(:f3, :major)
+  play_chord chord(:f3, :major), release: 4
   sleep 4
-  play_chord chord(:c3, :major)
+  play_chord chord(:c3, :major), release: 4
   sleep 4
-  play_chord chord(:d3, :minor)
+  play_chord chord(:d3, :minor), release: 4
   sleep 4
-  play_chord chord(:bb3, :major)
+  play_chord chord(:bb3, :major), release: 4
   sleep 4
-  play_chord chord(:a3, :minor)
+  play_chord chord(:a3, :minor), release: 4
   sleep 4
-  play_chord chord(:eb3, :major)
+  play_chord chord(:eb3, :major), release: 4
   sleep 4
-  play_chord chord(:bb3, :major)
+  play_chord chord(:bb3, :major), release: 4
   sleep 4
-  play_chord chord(:f3, :major)
+  play_chord chord(:f3, :major), release: 4
 end
 
 define :melody do
