@@ -33,9 +33,12 @@ live_loop :arpeggio do
 end
 
 live_loop :drums do
+  sleep 4
+  loop do
     sample :drum_snare_soft
     sleep 0.5
     sample :drum_cymbal_closed
     sleep 0.5
+  end
 end
 
