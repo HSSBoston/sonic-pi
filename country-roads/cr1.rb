@@ -1,8 +1,7 @@
 use_bpm 70
 use_synth :piano
 
-# --- Background chords (optional) ---
-define :country_chords do
+define :chords do
   sleep 4
   play_chord chord(:f3, :major)
   sleep 4
@@ -28,9 +27,8 @@ define :melody do
                      [0.25, 0.75, 2, 0.25,0.25,0.5, 1,   2,   0.25,0.25,0.5, 3,   0.5, 0.5, 4]
 end
 
-# --- Play together ---
-in_thread(name: :chords) do
-  country_chords
+in_thread do
+  chords
 end
 
 melody
